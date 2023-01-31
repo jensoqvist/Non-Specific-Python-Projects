@@ -1,6 +1,5 @@
-
-
 def to_hex(num):
+    '''function to convert numbers from base 10 to base 16'''
     num_list = []
     while num >= 16:
         mod_num = num % 16
@@ -20,4 +19,4 @@ def to_hex(num):
 if __name__ == '__main__':
     num_in = input("Number to convert: ")
     num_hex = to_hex(int(num_in))
-    print(num_hex, base)
+    print(num_hex)
